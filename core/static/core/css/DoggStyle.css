@@ -1,0 +1,86 @@
+/*---------- Css ---------- */
+
+/* fonts */
+.fonty {
+    font-family: 'Bitter', serif !important;
+}
+/*------------- Secciones -------------*/
+/* barra */
+.navsty {
+    background-color: #96c4c4 !important;
+}
+
+li a:hover:not() {
+    background-color: #b2e2f2;
+}
+
+/* body */
+body{
+    margin-top: 100px!important; 
+    background: linear-gradient(rgba(255, 255, 255), rgba(184, 178, 178, 0.9)) !important;
+}
+section div img{
+    width: 250px!important;
+    height: 250px!important;
+}
+
+/* Burbuja */
+section.container-fluid {
+    margin: 50px;
+    width: auto;
+}
+article.burbuja{
+    margin: 0 auto;
+    width: 100% !important;
+    border-radius: 30px;
+    background: linear-gradient(rgb(189, 180, 180, 0.5), rgba(255, 255, 255, 0.9));
+    box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.5);
+}
+.parrafo{
+    text-align: left;
+    font-size: x-large;
+    color: black;
+    margin: 50px;
+    max-width: 0 auto;
+}
+
+/* CSS_Imagen */
+.mp {
+    margin: 0 !important;
+    padding: 25px;
+}
+.imgP{
+    width: 500px!important;
+    height: 450px!important;
+    border-radius: 15px;
+    box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.5);
+}
+
+.imgg {
+    margin: 10px;
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.5);
+
+}
+.imgg:hover {
+    border: 5px solid rgba(255, 255, 255, 0.733);
+    transition: .1s ease;
+    opacity: .90;
+}
+
+.crsnt {
+    cursor: default
+}
+
+/* Footer */
+footer {
+    margin: auto;
+    background-color:#96c4c4;
+    color:white;padding: 1px;
+}
+.infoSg{
+    display: flex;
+    align-items: center;
+}

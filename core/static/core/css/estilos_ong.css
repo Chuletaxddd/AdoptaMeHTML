@@ -1,0 +1,102 @@
+/*---------- Css ---------- */
+
+/* fonts */
+.fonty {
+    font-family: 'Bitter', serif !important;
+}
+/*------------- Secciones -------------*/
+/* header */
+
+/* barra */
+.navsty {
+    background-color: #96c4c4 !important;
+}
+
+li a:hover:not() {
+    background-color: #b2e2f2;
+}
+
+/* body */
+body{
+    margin-top: 100px!important;
+    background: linear-gradient(rgba(255, 255, 255), rgba(184, 178, 178, 0.9)) !important;
+}
+
+/* Tarjeta */
+section.container-fluid {
+    margin: 50px;
+    width: auto;
+}
+
+.tam {
+    margin: 0 auto;
+    width: 100% !important;
+    border-radius: 25px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/img_inicio/perro_gato.tarjeta.jpg);
+    background-size: 100% 100%;
+    box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.5);
+}
+
+.parrafo {
+    text-align: center;
+    font-size: xx-large;
+    color: white;
+    margin: 50px;
+    max-width: 0 auto;
+}
+
+.text {
+    text-align: center;
+    color: white;
+    margin: 30px;
+    max-width: 0 auto;
+}
+
+.texto {
+    text-align: center;
+    color: white;
+    margin: 50px;
+    max-width: 0 auto;
+}
+
+/* CSS_Galeria */
+.mp {
+    margin: 0 !important;
+    padding: 10px;
+}
+
+
+.imgg {
+    margin: 10px;
+    width: 100%;
+    height: 250px;
+    border-radius: 15px;
+    box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.5);
+
+}
+
+.imgg:hover {
+    border: 5px solid rgba(255, 255, 255, 0.733);
+    transition: .1s ease;
+    opacity: .90;
+}
+
+.crsnt {
+    cursor: default
+}
+
+/* Footer */
+footer {
+    margin: auto;
+    background-color:#96c4c4;
+    color:white;padding: 1px;
+}
+.infoSg{
+    display: flex;
+    align-items: center;
+}
+
+
+/*----------*/
+/* Pruebas: */
+/*----------*/

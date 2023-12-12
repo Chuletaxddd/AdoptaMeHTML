@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <!-- meta tags-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inicioONG</title>
+
+    <!--Importacion css-->
+    <link type="text/css" rel="stylesheet" href="{% static 'core/css/estilos_ong.css' %}">
+
+    <!--Boostrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--Importacion Fuente-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,600;1,400;1,800&display=swap"
+        rel="stylesheet">
+</head>
+<header>
+    <!------------------------------------------[BarraNav]------------------------------------------------>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg marginTop fixed-top  navbar-dark navsty fonty">
+            <!--Titulo en Barra_Nav-->
+            <img src="{% static 'core/img/img_icon/icono.png' %}" height=50px alt="Just no...">
+            AdoptaMe
+            <!--Boton de menu para dispositivos celulares o tablet-->
+            <button class="navbar-toggler" data-target="#menu" data-toggle="collapse">
+                <span class="navbar-toggler-icon">
+                </span>
+            </button>
+        </nav>
+    </div>
+    <!----------------------------------------------------------------------------------------------->
+</header>
+
+<body>
+    <!-- tarjeta -->
+    <section class="container-fluid">
+        <article class="tam fonty">
+            <div class="row">
+                <!--Texto de la tarjeta-->
+                <div class="col-md-6">
+                    <h1 class="text">Nuestros Integrantes:</h1>
+                    <h1 class="texto">Matias - cargo 1</h1>
+                    <a href="https://www.duoc.cl/carreras/analista-programador-computacional/?gclid=Cj0KCQjwt_qgBhDFARIsABcDjOdXB0-DZ6tjqqcLHwIioDKSkr0M5QvqDiHmyNCiR_9GByUfHkCvI6AaAnkZEALw_wcB"
+                        class="nav-link crsnt">
+                        <h1 class="texto">Jose - Jefe de proyecto DuocUc</h1>
+                    </a>
+                    <h1 class="texto">Cristian - cargo 3</h1>
+                </div>
+                <div class="col-md-6">
+                    <h1 class="text">Nuestra Visión</h1>
+                    <p class="parrafo">"Nos une el amor por los animales y luchamos por justicia y respeto para ellos.
+                        Tenemos a cargo
+                        más de 3
+                        animales rescatados del maltrato, la explotación y el abandono en nuestro refugio y hogares
+                        temporales y
+                        cuidamos animales comunitarios en la calle. Rescatamos en la Región Metropolitana y ¡Somos
+                        felices haciendo
+                        lo que amamos!"
+                    </p>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!--Galeria-->
+    <section class="container">
+        <div class="text-center pt-5 fonty">
+            <h1>Animalitos que necesitan tu ayuda</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-4" class="mp">
+                <img class="imgg" src="{% static 'core/img/img_inicio/gato perros a mimir.jpg' %} " alt="Just No...">
+            </div>
+
+            <div class="col-lg-4 col-md-4" class="mp">
+                <img class="imgg" src="{% static 'core/img/img_inicio/gato_inicio.jfif' %}" alt="Just No...">
+            </div>
+
+            <div class="col-lg-4 col-md-4" class="mp">
+                <img class="imgg" src="{% static 'core/img/img_inicio/gato_perro.jpg' %}" alt="Just No...">
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4" class="mp">
+                <img class="imgg" src="{% static 'core/img/img_inicio/perro_inicio.jpg' %}" alt="Just No...">
+            </div>
+
+            <div class="col-lg-4 col-md-4" class="mp">
+                <img class="imgg" src="{% static 'core/img/img_inicio/gatitos.jpeg' %}" alt="Just No...">
+            </div>
+
+            <div class="col-lg-4 col-md-4" class="mp">
+                <img class="imgg" src="{% static 'core/img/img_inicio/adoptame.jpg'%}" alt="Just No...">
+            </div>
+        </div>
+    </section>
+    <br>
+    <!--BoosTrapJs-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!--Script de barra estable-->
+    <!-- <script>
+        $(window).scroll(function () {
+            if ($(window).scrollTop()) {
+                $("nav").addClass("navsty");
+            } else {
+                $("nav").removeClass("navsty");
+            }
+        })
+
+    </script> -->
+</body>
+
+<!--Footer-->
+<footer>
+    <div class="infoSg">
+        <img src="{% static 'core/img/img_icon/icono.png' %}" style="width: 250px; margin-right: 20px ;"
+            alt="Sin imagen">
+        <div class="fonty">
+            <h3>Contactanos</h3>
+            <p>Telefono:+569311677854</p>
+            <p>Correo: ongayudaaundog@gmail.com</p>
+            <p>Direccion: Calle Nueva #87 STGO CENTRO</p>
+        </div>
+    </div>
+</footer>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <link rel="stylesheet">
+    <style>
+        #qr-code {
+            width: 100px;
+            height: 100px;
+            margin-top: 15px;
+        }
+
+        #download-button {
+            display: none;
+        }
+
+        @media only screen and (max-width: 600px) {
+            #qr-code {
+                display: none;
+            }
+
+            #download-button {
+                display: block;
+            }
+        }
+
+        @media only screen and (min-width: 601px) {
+            #qr-code {
+                display: block;
+            }
+
+            #download-button {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function () {
+        var qrcode = new QRCode(document.getElementById("qr-code"), {
+            width: 100,
+            height: 100,
+        });
+
+        function makeCode() {
+            var elText = document.getElementById("text");
+
+            if (!elText.value) {
+                alert("Ingresa un texto");
+                elText.focus();
+                return;
+            }
+
+            qrcode.makeCode(elText.value);
+        }
+
+        function showDownloadButton() {
+            var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            var downloadButton = document.getElementById("download-button");
+            var qrCodeDiv = document.getElementById("qr-code");
+
+            if (isMobile) {
+                downloadButton.style.display = "block";
+                qrCodeDiv.style.display = "none";
+            } else {
+                downloadButton.style.display = "none";
+                qrCodeDiv.style.display = "block";
+                makeCode();
+            }
+        }
+
+        showDownloadButton();
+
+        document.getElementById("text").addEventListener("blur", makeCode);
+        document.getElementById("text").addEventListener("keydown", function (e) {
+            if (e.keyCode == 13) {
+                makeCode();
+            }
+        });
+
+        function downloadApp() {
+            var elText = document.getElementById("text");
+            window.location.href = elText.value;
+        }
+    });
+</script>
+
+<body>
+    <div id="app-info"> 
+        <p>¡¡DESCARGA NUESTRA APP PARA TENER UNA MEJOR EXPERIENCIA!!</p>
+        <input id="text" type="text" value="https://www.youtube.com/watch?v=p8nVS9dkXVE" style="width:80%" /><br />
+        <div id="qr-code"></div>
+        <a id="download-button" href="#" onclick="downloadApp()">Descargar la App</a>
+    </div>
+    
+</body>
+
+</html>
