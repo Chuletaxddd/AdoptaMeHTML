@@ -32,7 +32,7 @@
         <nav class="navbar navbar-expand-lg marginTop fixed-top  navbar-dark navsty fonty">
             <!--Titulo en Barra_Nav-->
             <img src="{% static 'core/img/img_icon/icono.png' %}" height=50px alt="Just no...">
-            AdoptaMe
+            <h3>AdoptaMe</h3>
             <!--Boton de menu para dispositivos celulares o tablet-->
             <button class="navbar-toggler" data-target="#menu" data-toggle="collapse">
                 <span class="navbar-toggler-icon">
@@ -188,8 +188,8 @@
             <div id="app-info" class="centy">
                 <p>¡¡Solo disponible para dispositivos Android!!</p>
                 <div id="qr-code"></div>
-                <input id="text" type="hidden" value="https://www.youtube.com/watch?v=p8nVS9dkXVE" style="width:80%" />
-                <a id="download-button" href="#" onclick="downloadApp()">Descargar la App</a>
+                <input id="text" type="hidden" value="https://drive.google.com/file/d/1_YLRv-R7ghjuHJ8H8qcf5Og_LiScbWSc/view?usp=drive_link" style="width:80%" />
+                <a id="download-button" href="https://drive.google.com/file/d/1_YLRv-R7ghjuHJ8H8qcf5Og_LiScbWSc/view?usp=drive_link" onclick="downloadApp()">Descargar la App</a>
             </div>
         </div>
     </div>
@@ -197,8 +197,8 @@
 <script type="text/javascript">
     document.addEventListener("DOMContentLoaded", function () {
         var qrcode = new QRCode(document.getElementById("qr-code"), {
-            width: 100,
-            height: 100,
+            width: 200,
+            height: 200,
         });
 
         function makeCode() {
@@ -209,10 +209,8 @@
                 elText.focus();
                 return;
             }
-
             qrcode.makeCode(elText.value);
         }
-
         function showDownloadButton() {
             var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
             var downloadButton = document.getElementById("download-button");
@@ -227,16 +225,13 @@
                 makeCode();
             }
         }
-
         showDownloadButton();
-
         document.getElementById("text").addEventListener("blur", makeCode);
         document.getElementById("text").addEventListener("keydown", function (e) {
             if (e.keyCode == 13) {
                 makeCode();
             }
         });
-
         function downloadApp() {
             var elText = document.getElementById("text");
             window.location.href = elText.value;
