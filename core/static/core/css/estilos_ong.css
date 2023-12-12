@@ -1,11 +1,51 @@
 /*---------- Css ---------- */
+.special-info {
+    display: none;
+}
 
 /* fonts */
 .fonty {
     font-family: 'Bitter', serif !important;
 }
+
 /*------------- Secciones -------------*/
 /* header */
+#app-info {
+    padding: 40px;
+}
+
+.Org {
+    text-align: left;
+    color: #000000;
+    text-shadow:
+        1px 1px 1px #9c6f47d2;
+}
+
+section {
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+}
+
+.kayser {
+    text-align: center;
+    color: #000000;
+    text-shadow: 1px 1px 2px #9c6f47d2;
+}
+
+.centy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.centyUni{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 
 /* barra */
 .navsty {
@@ -17,8 +57,8 @@ li a:hover:not() {
 }
 
 /* body */
-body{
-    margin-top: 100px!important;
+body {
+    margin-top: 100px !important;
     background: linear-gradient(rgba(255, 255, 255), rgba(184, 178, 178, 0.9)) !important;
 }
 
@@ -88,10 +128,12 @@ section.container-fluid {
 /* Footer */
 footer {
     margin: auto;
-    background-color:#96c4c4;
-    color:white;padding: 1px;
+    background-color: #96c4c4;
+    color: white;
+    padding: 1px;
 }
-.infoSg{
+
+.infoSg {
     display: flex;
     align-items: center;
 }

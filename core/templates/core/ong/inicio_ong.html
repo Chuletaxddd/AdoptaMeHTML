@@ -21,6 +21,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,600;1,400;1,800&display=swap"
         rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <link rel="stylesheet">
 </head>
 <header>
     <!------------------------------------------[BarraNav]------------------------------------------------>
@@ -47,23 +51,26 @@
                 <!--Texto de la tarjeta-->
                 <div class="col-md-6">
                     <h1 class="text">Nuestros Integrantes:</h1>
-                    <h1 class="texto">Matias - cargo 1</h1>
+                    <h1 class="texto">Matias - Equipo de Desarrollo</h1>
                     <a href="https://www.duoc.cl/carreras/analista-programador-computacional/?gclid=Cj0KCQjwt_qgBhDFARIsABcDjOdXB0-DZ6tjqqcLHwIioDKSkr0M5QvqDiHmyNCiR_9GByUfHkCvI6AaAnkZEALw_wcB"
                         class="nav-link crsnt">
                         <h1 class="texto">Jose - Jefe de proyecto DuocUc</h1>
                     </a>
-                    <h1 class="texto">Cristian - cargo 3</h1>
+                    <h1 class="texto">Cristian - Equipo de Desarrollo</h1>
                 </div>
                 <div class="col-md-6">
-                    <h1 class="text">Nuestra Visión</h1>
-                    <p class="parrafo">"Nos une el amor por los animales y luchamos por justicia y respeto para ellos.
-                        Tenemos a cargo
-                        más de 3
-                        animales rescatados del maltrato, la explotación y el abandono en nuestro refugio y hogares
-                        temporales y
-                        cuidamos animales comunitarios en la calle. Rescatamos en la Región Metropolitana y ¡Somos
-                        felices haciendo
-                        lo que amamos!"
+                    <h1 class="text">Nuestra App</h1>
+                    <p class="parrafo">"Bienvenidxs a Adoptame, una organización sin fines de lucro dedicada a hacer que
+                        los sueños de
+                        las mascotas
+                        y las familias se hagan realidad. Nos apasiona reunir a animales adorables y familias amorosas
+                        en un vínculo
+                        que
+                        cambia
+                        vidas. En AdoptaMe, creemos que cada mascota merece un hogar amoroso y cada hogar merece la
+                        alegría y el
+                        amor que
+                        una mascota puede brindar."
                     </p>
                 </div>
             </div>
@@ -104,6 +111,51 @@
             </div>
         </div>
     </section>
+    <section class="centyUni">
+        <h2 class="kayser">
+            🐾 ¡Bienvenido a AdoptaMe - Donde los Corazones Peludos Encuentran un Hogar! 🐾
+        </h2>
+        <h3>
+            ¿Estás listo para encontrar a tu compañero peludo perfecto? ¡Entonces nuestra aplicación es perfecta para
+            ti!
+        </h3>
+        <h3>
+            Descubre la magia de la adopción con un toque moderno al estilo Tinder. AdoptaMe es más que
+            una aplicación, es una conexión especial entre humanos y sus futuros amigos de cuatro patas. Aquí, cada
+            deslizamiento a la derecha es un paso más cerca de tu compañero peludo ideal.
+        </h3>
+        <h3>
+            🐶 Encuentra a tu Compañero Perfecto:
+            Explora perfiles adorables de mascotas que buscan un hogar amoroso. Desde perros energéticos hasta gatos
+            cariñosos, ¡tenemos el amigo peludo perfecto para cada estilo de vida!
+        </h3>
+        <h3>
+            🤝 Haz Coincidir tu Corazón con el de una Mascota:
+            Desliza a la derecha si encuentras a tu alma gemela peluda. ¿Una coincidencia? ¡Prepárate para enamorarte!
+            La adopción nunca fue tan emocionante y fácil.
+        </h3>
+        <h3>
+            📸 Conoce a tus Posibles Compañeros:
+            Sumérgete en historias conmovedoras y fotos encantadoras. Cada mascota tiene una historia única que te
+            robará el corazón.
+        </h3>
+        <h3>
+            🏡 Da un Paso hacia un Hogar Más Feliz:
+            ¡Haz que la adopción sea emocionante! Cada deslizamiento es un paso hacia un hogar más feliz y amoroso.
+            Ayuda a estas adorables mascotas a encontrar el lugar donde pertenecen.
+        </h3>
+
+
+        <!-- <h4 class="kayser">
+            "En el acto de adopción, encontramos la trascendencia del amor: el don desinteresado de un corazón humano
+            que
+            encuentra su plenitud al ofrecer un hogar, y el alma de un ser necesitado que encuentra su destino en el
+            calor del
+            afecto compartido. En este intercambio, descubrimos la esencia misma de nuestra humanidad: el poder de
+            transformar
+            vidas a través del amor y la generosidad, trazando un camino hacia la plenitud y la empatía en nuestro viaje
+            conjunto por la existencia."Kayser, F. (2007).</h4> -->
+    </section>
     <br>
     <!--BoosTrapJs-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -115,70 +167,33 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <!--Script de barra estable-->
-    <!-- <script>
-        $(window).scroll(function () {
-            if ($(window).scrollTop()) {
-                $("nav").addClass("navsty");
-            } else {
-                $("nav").removeClass("navsty");
-            }
-        })
-
-    </script> -->
 </body>
 
 <!--Footer-->
 <footer>
-    <div class="infoSg">
-        <img src="{% static 'core/img/img_icon/icono.png' %}" style="width: 250px; margin-right: 20px ;"
-            alt="Sin imagen">
-        <div class="fonty">
-            <h3>Contactanos</h3>
-            <p>Telefono:+569311677854</p>
-            <p>Correo: ongayudaaundog@gmail.com</p>
-            <p>Direccion: Calle Nueva #87 STGO CENTRO</p>
+    <div class="row">
+        <div class="col-6">
+            <div class="infoSg">
+                <img src="{% static 'core/img/img_icon/icono.png' %}" style="width: 250px; margin-right: 20px ;"
+                    alt="Sin imagen">
+                <div class="fonty">
+                    <h3>Contactanos</h3>
+                    <p>Telefono:+569311677854</p>
+                    <p>Correo: ongayudaaundog@gmail.com</p>
+                    <p>Direccion: Calle Nueva #87 STGO CENTRO</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 ">
+            <div id="app-info" class="centy">
+                <p>¡¡Solo disponible para dispositivos Android!!</p>
+                <div id="qr-code"></div>
+                <input id="text" type="hidden" value="https://www.youtube.com/watch?v=p8nVS9dkXVE" style="width:80%" />
+                <a id="download-button" href="#" onclick="downloadApp()">Descargar la App</a>
+            </div>
         </div>
     </div>
 </footer>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-    <link rel="stylesheet">
-    <style>
-        #qr-code {
-            width: 100px;
-            height: 100px;
-            margin-top: 15px;
-        }
-
-        #download-button {
-            display: none;
-        }
-
-        @media only screen and (max-width: 600px) {
-            #qr-code {
-                display: none;
-            }
-
-            #download-button {
-                display: block;
-            }
-        }
-
-        @media only screen and (min-width: 601px) {
-            #qr-code {
-                display: block;
-            }
-
-            #download-button {
-                display: none;
-            }
-        }
-    </style>
-</head>
 <script type="text/javascript">
     document.addEventListener("DOMContentLoaded", function () {
         var qrcode = new QRCode(document.getElementById("qr-code"), {
@@ -228,15 +243,5 @@
         }
     });
 </script>
-
-<body>
-    <div id="app-info"> 
-        <p>¡¡DESCARGA NUESTRA APP PARA TENER UNA MEJOR EXPERIENCIA!!</p>
-        <input id="text" type="text" value="https://www.youtube.com/watch?v=p8nVS9dkXVE" style="width:80%" /><br />
-        <div id="qr-code"></div>
-        <a id="download-button" href="#" onclick="downloadApp()">Descargar la App</a>
-    </div>
-    
-</body>
 
 </html>
